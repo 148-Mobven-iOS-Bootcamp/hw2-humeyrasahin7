@@ -13,7 +13,7 @@ class ViewController: UIViewController, SecondViewControllerDelegate {
     
     
     @IBOutlet weak var fullName: UILabel!
-    var senderID = ""
+    //var senderID = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ViewController: UIViewController, SecondViewControllerDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goSecondVC" {
             if let destination = segue.destination as? SecondViewController {
-                senderID = destination.senderID
+                //senderID = destination.senderID
                 destination.delegate = self
                 destination.makeFullname = { name, surname in
                     self.fullName.text = "\(name) \(surname)"
