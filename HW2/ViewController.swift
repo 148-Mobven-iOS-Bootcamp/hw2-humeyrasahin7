@@ -27,7 +27,7 @@ class ViewController: UIViewController, SecondViewControllerDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goSecondVC" {
             if let destination = segue.destination as? SecondViewController {
-                senderID = destination.senderID
+//                senderID = destination.senderID
                 destination.delegate = self
                 destination.makeFullname = { name, surname in
                     self.fullName.text = "\(name) \(surname)"
@@ -40,6 +40,7 @@ class ViewController: UIViewController, SecondViewControllerDelegate {
     
     func getFullName(name: String, surname: String) {
         fullName.text = "\(name) \(surname)"
+    //    print("vc nin içindeki getFullName çalıştı")
     }
     
     

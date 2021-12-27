@@ -56,7 +56,8 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func sendWithDelegate(_ sender: Any) {
-        if let nameText = nameText.text, let surnameText = surnameText.text{
+        if let nameText = nameText.text,
+           let surnameText = surnameText.text{
             delegate?.getFullName(name: nameText, surname: surnameText)
             //senderID = "Delegate"
             dismiss(animated: true)
@@ -65,7 +66,9 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func sendWithClosure(_ sender: Any) {
-        if let nameText = nameText.text, let surnameText = surnameText.text, let makeFullname = makeFullname{
+        if let nameText = nameText.text,
+           let surnameText = surnameText.text,
+           let makeFullname = makeFullname{
             makeFullname(nameText, surnameText)
             //senderID = "Closure"
             dismiss(animated: true)

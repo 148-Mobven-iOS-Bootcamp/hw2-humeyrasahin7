@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="gS2-u0-yEk" customClass="SecondViewController" customModule="HW2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H3p-qn-oEA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZR-Sm-kmz">
@@ -123,7 +123,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="gS2-u0-yEk" kind="presentation" identifier="goSecondVC" id="wRp-1l-ZNL"/>
+                                    <segue destination="gS2-u0-yEk" kind="presentation" identifier="goSecondVC" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="wRp-1l-ZNL"/>
                                 </connections>
                             </button>
                         </subviews>
